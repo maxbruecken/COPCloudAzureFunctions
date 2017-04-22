@@ -164,15 +164,6 @@
     <Compile Include="Writer\WriterFunctions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="appsettings.json" />
     <Content Include="host.json" />
   </ItemGroup>
@@ -195,8 +186,14 @@
     <Content Include="CheckSensorsAndAlarmsTrigger\function.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\cop-cloud-functions - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cop-cloud-functions - Web Deploy.pubxml" />
+    <None Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
