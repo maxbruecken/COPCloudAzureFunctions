@@ -156,6 +156,7 @@
   <ItemGroup>
     <Compile Include="Aggregator\AggregatorFunctions.cs" />
     <Compile Include="Core\Models\AggregatedSensorData.cs" />
+    <Compile Include="Core\Models\PersistentSensorData.cs" />
     <Compile Include="Core\Models\Sensor.cs" />
     <Compile Include="Core\Models\SensorAlarm.cs" />
     <Compile Include="Core\Models\SensorData.cs" />

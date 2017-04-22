@@ -1,10 +1,21 @@
 ﻿{
   "disabled": false,
   "scriptFile": "..\\bin\\COP.Cloud.Azure.Functions.dll",
-  "entryPoint": "COP.Cloud.Azure.Functions.Writer.WriterFunctions.ProcessValidatedDataAsync",
+  "entryPoint": "COP.Cloud.Azure.Functions.Writer.WriterFunctions.WriteValidatedSensorDataAsync",
   "bindings": [
     {
-      
+      "name": "validatedSensorData",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "validated-sensor-data",
+      "connection": ""
+    },
+    {
+      "name": "sensordatas",
+      "type": "table",
+      "direction": "out",
+      "tableName": "sensordata",
+      "connection": ""
     }
   ]
 }
