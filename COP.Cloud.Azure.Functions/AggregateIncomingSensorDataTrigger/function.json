@@ -1,0 +1,21 @@
+﻿{
+  "disabled": false,
+  "scriptFile": "..\\bin\\COP.Cloud.Azure.Functions.dll",
+  "entryPoint": "COP.Cloud.Azure.Functions.Aggregator.AggregatorFunctions.ProcessSensorDataAsync",
+  "bindings": [
+    {
+      "name": "sensorData",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "incoming-sensor-data",
+      "connection": ""
+    },
+    {
+      "name": "aggregatedSensorDataQueue",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "aggregated-sensor-data",
+      "connection": ""
+    }
+  ]
+}

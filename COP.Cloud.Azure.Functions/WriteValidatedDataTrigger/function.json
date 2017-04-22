@@ -1,0 +1,10 @@
+﻿{
+  "disabled": false,
+  "scriptFile": "..\\bin\\COP.Cloud.Azure.Functions.dll",
+  "entryPoint": "COP.Cloud.Azure.Functions.Writer.WriterFunctions.ProcessValidatedDataAsync",
+  "bindings": [
+    {
+      
+    }
+  ]
+}

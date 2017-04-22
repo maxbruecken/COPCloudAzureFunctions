@@ -1,0 +1,28 @@
+﻿{
+  "disabled": false,
+  "scriptFile": "..\\bin\\COP.Cloud.Azure.Functions.dll",
+  "entryPoint": "COP.Cloud.Azure.Functions.Validator.ValidatorFunctions.CheckSensorsAndAlarms",
+  "bindings": [
+    {
+      "name": "timerInfo",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */1 * * * *",
+      "runOnStartup": true
+    },
+    {
+      "name": "sensors",
+      "type": "table",
+      "direction": "out",
+      "tableName": "sensors",
+      "connection": ""
+    },
+    {
+      "name": "sensorAlarms",
+      "type": "table",
+      "direction": "out",
+      "tableName": "sensoralarms",
+      "connection": ""
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+﻿{
+  "disabled": false,
+  "scriptFile": "..\\bin\\COP.Cloud.Azure.Functions.dll",
+  "entryPoint": "COP.Cloud.Azure.Functions.Validator.ValidatorFunctions.ValidateAggregatedSensorDataAsync",
+  "bindings": [
+    {
+      "name": "aggregatedSensorData",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "aggregated-sensor-data",
+      "connection": ""
+    },
+    {
+      "name": "validatedSensorDataQueue",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "validated-sensor-data",
+      "connection": ""
+    },
+    {
+      "name": "sensors",
+      "type": "table",
+      "direction": "out",
+      "tableName": "sensors",
+      "connection": ""
+    },
+    {
+      "name": "sensorAlarms",
+      "type": "table",
+      "direction": "out",
+      "tableName": "sensoralarms",
+      "connection": ""
+    }
+  ]
+}
